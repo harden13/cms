@@ -1,0 +1,9 @@
+<?php
+//000000086400a:21:{s:2:"id";s:4:"1156";s:4:"name";s:8:"feedback";s:5:"title";s:15:"用户反馈表";s:6:"extend";s:1:"0";s:8:"relation";s:0:"";s:7:"need_pk";s:1:"1";s:10:"field_sort";s:53:"["username","product","from","area","score","is_dev"]";s:11:"field_group";s:8:"1:基础";s:14:"attribute_list";N;s:13:"template_list";s:0:"";s:12:"template_add";s:0:"";s:13:"template_edit";s:0:"";s:9:"list_grid";s:236:"username:姓名
+product|get_name_by_status:关注的产品
+from|get_name_by_status:来源渠道
+area|get_name_by_status:用户所在地区
+score:评分
+is_dev|get_name_by_status:是否是开发人员
+cTime|time_format:反馈时间";s:8:"list_row";s:2:"10";s:10:"search_key";s:36:"username:请输入姓名进行搜索";s:11:"search_list";s:0:"";s:11:"create_time";s:10:"1495786232";s:11:"update_time";s:10:"1495869343";s:6:"status";s:1:"1";s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:8:"Feedback";}
+?>

@@ -1,0 +1,525 @@
+[ 2017-05-27T15:14:50+08:00 ] 127.0.0.1 /index.php?s=/Admin/Update/delcache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000722s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Update/delcache%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: meta_title /Users/young/code/weiphp/Runtime/Cache/Admin/7448bc5b6c7ede42a8f022f98e8cc17b.php 第 5 行.
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_manager` [ RunTime:0.0045s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `wp_public_follow` [ RunTime:0.0008s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='1' )  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/UserModel.class.php 第 251 行.
+NOTIC: [8] Undefined index:  /Users/young/code/weiphp/Application/Common/Model/UserModel.class.php 第 271 行.
+NOTIC: [8] Undefined index:  /Users/young/code/weiphp/Application/Common/Model/UserModel.class.php 第 272 行.
+NOTIC: [2] preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead /Users/young/code/weiphp/Application/Common/Common/function.php 第 3285 行.
+NOTIC: [8] Undefined variable: txt /Users/young/code/weiphp/Application/Common/Common/function.php 第 3294 行.
+SQL: SHOW COLUMNS FROM `wp_user_tag_link` [ RunTime:0.0007s ]
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+NOTIC: [2] file_put_contents(./Runtime/Temp/weiphp_931b5b3cad55d64c859ac8fe37543b59.php): failed to open stream: No such file or directory /Users/young/code/weiphp/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 137 行.
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/UserModel.class.php 第 251 行.
+NOTIC: [8] Undefined index:  /Users/young/code/weiphp/Application/Common/Model/UserModel.class.php 第 271 行.
+NOTIC: [8] Undefined index:  /Users/young/code/weiphp/Application/Common/Model/UserModel.class.php 第 272 行.
+NOTIC: [2] preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead /Users/young/code/weiphp/Application/Common/Common/function.php 第 3285 行.
+NOTIC: [8] Undefined variable: txt /Users/young/code/weiphp/Application/Common/Common/function.php 第 3294 行.
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] file_put_contents(./Runtime/Temp/weiphp_931b5b3cad55d64c859ac8fe37543b59.php): failed to open stream: No such file or directory /Users/young/code/weiphp/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2017-05-27T15:14:56+08:00 ] 127.0.0.1 /index.php?s=/Admin/Model/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000651s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wp_menu` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_model` WHERE `status` > -1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `status` > -1 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Shop /Users/young/code/weiphp/Application/Admin/Controller/ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: UserCenter /Users/young/code/weiphp/Application/Admin/Controller/ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: UserCenter /Users/young/code/weiphp/Application/Admin/Controller/ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote /Users/young/code/weiphp/Application/Admin/Controller/ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote /Users/young/code/weiphp/Application/Admin/Controller/ModelController.class.php 第 43 行.
+NOTIC: [8] Undefined index: Vote /Users/young/code/weiphp/Application/Admin/Controller/ModelController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-05-27T15:14:57+08:00 ] 127.0.0.1 /index.php?s=/Admin/model/edit/id/1156.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000910s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/edit%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`is_show` FROM `wp_attribute` WHERE `model_id` = 1156 ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Use of undefined constant addon - assumed 'addon' /Users/young/code/weiphp/Runtime/Cache/Admin/4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [8] Use of undefined constant addon - assumed 'addon' /Users/young/code/weiphp/Runtime/Cache/Admin/4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [8] Use of undefined constant addon - assumed 'addon' /Users/young/code/weiphp/Runtime/Cache/Admin/4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2017-05-27T15:15:05+08:00 ] 127.0.0.1 /index.php?s=/Admin/attribute/index/model_id/1156.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000641s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_attribute` WHERE `model_id` = 1156 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `model_id` = 1156 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2017-05-27T15:15:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Attribute/edit/id/11376.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000679s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/edit%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `id` = 11376 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`name` FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2017-05-27T15:15:32+08:00 ] 127.0.0.1 /index.php?s=/Admin/Attribute/index/model_id/1156.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000751s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_attribute` WHERE `model_id` = 1156 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `model_id` = 1156 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2017-05-27T15:15:33+08:00 ] 127.0.0.1 /index.php?s=/Admin/model/edit/id/1156.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000842s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/edit%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type`,`addon` FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] unlink(./Runtime/Temp/weiphp_f8be6ccd4de16df66f920af18f41e2bc.php): No such file or directory /Users/young/code/weiphp/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT `id`,`name`,`title`,`is_show` FROM `wp_attribute` WHERE `model_id` = 1156 ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Use of undefined constant addon - assumed 'addon' /Users/young/code/weiphp/Runtime/Cache/Admin/4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [8] Use of undefined constant addon - assumed 'addon' /Users/young/code/weiphp/Runtime/Cache/Admin/4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+NOTIC: [8] Use of undefined constant addon - assumed 'addon' /Users/young/code/weiphp/Runtime/Cache/Admin/4bc4913b407324fb4d494724d5710d65.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2017-05-27T15:15:43+08:00 ] 127.0.0.1 /index.php?s=/Admin/Model/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000624s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Model/update%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'feedback' AND `id` <> '1156' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wp_model` SET `name`='feedback',`title`='用户反馈表',`addon`='Feedback',`field_sort`='[\"username\",\"product\",\"from\",\"area\",\"score\",\"is_dev\"]',`list_grid`='username:姓名
+product|get_name_by_status:关注的产品
+from|get_name_by_status:来源渠道
+area|get_name_by_status:用户所在地区
+score:评分
+is_dev|get_name_by_status:是否是开发人员
+cTime|time_format:反馈时间',`search_key`='username:请输入姓名进行搜索',`search_list`='',`template_list`='',`template_add`='',`template_edit`='',`list_row`='10',`update_time`='1495869343' WHERE `id` = 1156 [ RunTime:0.0005s ]
+NOTIC: [2] unlink(./Runtime/Temp/weiphp_8badceef8761e1f2fa41d8bf7e2cdf39.php): No such file or directory /Users/young/code/weiphp/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `wp_action` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_action` WHERE `name` = 'update_model' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_action_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('7','1','2130706433','model','1156','1495869343','操作url：/index.php?s=/Admin/Model/update.html') [ RunTime:0.0005s ]
+
+[ 2017-05-27T15:15:45+08:00 ] 127.0.0.1 /index.php?s=/Admin/Attribute/index/model_id/1156.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000632s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: uid /Users/young/code/weiphp/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /Users/young/code/weiphp/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /Users/young/code/weiphp/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 45 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 75 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 121 行.
+NOTIC: [8] Undefined index: core_top_menu /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 132 行.
+NOTIC: [8] Undefined index: default_data /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 151 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 168 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/ManagerMenuModel.class.php 第 176 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /Users/young/code/weiphp/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `wp_attribute` SET `extra`='167:微信小程序CMS
+168:用户反馈
+' WHERE `name` = 'addon_status' [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `wp_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wp_menu` WHERE ( pid !=0 AND url like '%Attribute/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wp_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `wp_menu` WHERE `pid` = 68 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wp_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_attribute` WHERE `model_id` = 1156 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`model_name`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `wp_attribute` WHERE `model_id` = 1156 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1156 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
